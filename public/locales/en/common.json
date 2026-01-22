@@ -33,7 +33,8 @@
     "signupTitle": "Create New Account",
     "alreadyHaveAccount": "Already have an account?",
     "dontHaveAccount": "Don't have an account?",
-    "forgotPassword": "Forgot Password?"
+    "forgotPassword": "Forgot Password?",
+    "loginWithEmailOrUsername": "You can login with either email or username"
   },
   "buttons": {
     "add": "Add Video",
@@ -69,6 +70,7 @@
     "loading": "Loading...",
     "error": "Error",
     "success": "Success",
-    "notFound": "Not Found"
+    "notFound": "Not Found",
+    "or": "or"
   }
 }

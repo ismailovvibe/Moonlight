@@ -1,9 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import Navbar from '@/components/Navbar';
 import VideoGrid from '@/components/VideoGrid';
-import Footer from '@/components/Footer';
 
 export default function Home() {
   const [videos, setVideos] = useState([]);
@@ -27,8 +25,6 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-black text-white">
-      <Navbar />
-      
       {/* Hero Banner */}
       <section className="relative h-[500px] bg-gradient-to-b from-purple-900/50 to-black flex items-center justify-center">
         <div className="text-center">
@@ -52,8 +48,6 @@ export default function Home() {
           </div>
         )}
       </section>
-
-      <Footer />
     </div>
   );
 }

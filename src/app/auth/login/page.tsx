@@ -13,7 +13,7 @@ export default function LoginPage() {
   const { t } = useTranslation();
   const router = useRouter();
   const { login, isLoading } = useAuth();
-  const [email, setEmail] = useState('');
+  const [emailOrUsername, setEmailOrUsername] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
 
@@ -21,7 +21,13 @@ export default function LoginPage() {
     e.preventDefault();
     setError('');
     try {
-      await login(email, password);
+      // Determine if input is email or username
+      const isEmail = emailOrUsername.includes('@');
+      const loginData = isEmail 
+        ? { email: emailOrUsername, password }
+        : { username: emailOrUsername, password };
+      
+      await login(emailOrUsername, password);
       router.push('/');
     } catch (err: any) {
       setError(err.message || 'Login failed');
@@ -47,15 +53,20 @@ export default function LoginPage() {
 
       <form onSubmit={handleSubmit} className="space-y-4">
         <div>
-          <label className="block text-gray-300 mb-2">{t('auth.email')}</label>
+          <label className="block text-gray-300 mb-2">
+            {t('auth.email')} {t('common.or')} {t('auth.username')}
+          </label>
           <input
-            type="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
+            type="text"
+            value={emailOrUsername}
+            onChange={(e) => setEmailOrUsername(e.target.value)}
             required
             className="w-full px-4 py-2 rounded-lg bg-gray-700 text-white border border-gray-600 focus:outline-none focus:border-purple-600"
-            placeholder={t('auth.email')}
+            placeholder={`${t('auth.email')} / ${t('auth.username')}`}
           />
+          <p className="text-xs text-gray-400 mt-1">
+            {t('auth.loginWithEmailOrUsername')}
+          </p>
         </div>
 
         <div>

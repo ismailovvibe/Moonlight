@@ -1,13 +1,13 @@
 import { NextRequest, NextResponse } from 'next/server';
 import connectDB from '@/backend/config/db';
 import User from '@/backend/models/User';
-import { verifyToken } from '@/backend/middleware/auth';
+import { verifyTokenFromRequest } from '@/backend/middleware/auth';
 
 export async function GET(req: NextRequest) {
   await connectDB();
   
   try {
-    const decoded: any = verifyToken(req);
+    const decoded: any = verifyTokenFromRequest(req);
     if (!decoded) {
       return NextResponse.json(
         { message: 'Unauthorized' },

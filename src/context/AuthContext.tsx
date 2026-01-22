@@ -51,11 +51,17 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     }
   };
 
-  const login = async (email: string, password: string) => {
+  const login = async (emailOrUsername: string, password: string) => {
+    // Determine if input is email or username
+    const isEmail = emailOrUsername.includes('@');
+    const loginPayload = isEmail 
+      ? { email: emailOrUsername, password }
+      : { username: emailOrUsername, password };
+
     const response = await fetch('/api/auth/login', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ email, password })
+      body: JSON.stringify(loginPayload)
     });
 
     if (!response.ok) {

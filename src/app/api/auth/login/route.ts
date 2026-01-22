@@ -6,13 +6,20 @@ import { generateToken } from '@/backend/middleware/auth';
 
 export async function POST(req: NextRequest) {
   await connectDB();
-  const { email, password } = await req.json();
+  const { email, username, password } = await req.json();
 
   try {
-    const user = await User.findOne({ email }).select('+password');
+    // Allow login with either email OR username
+    const user = await User.findOne({
+      $or: [
+        { email: email || undefined },
+        { username: username || undefined }
+      ]
+    }).select('+password');
+
     if (!user) {
       return NextResponse.json(
-        { message: 'Invalid credentials' },
+        { message: 'User not found' },
         { status: 401 }
       );
     }
@@ -20,7 +27,7 @@ export async function POST(req: NextRequest) {
     const isMatch = await verifyPassword(password, user.password);
     if (!isMatch) {
       return NextResponse.json(
-        { message: 'Invalid credentials' },
+        { message: 'Invalid password' },
         { status: 401 }
       );
     }

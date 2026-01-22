@@ -33,7 +33,8 @@
     "signupTitle": "Создать новый аккаунт",
     "alreadyHaveAccount": "Уже есть аккаунт?",
     "dontHaveAccount": "Нет аккаунта?",
-    "forgotPassword": "Забыли пароль?"
+    "forgotPassword": "Забыли пароль?",
+    "loginWithEmailOrUsername": "Вы можете войти либо по электронной почте, либо по имени пользователя"
   },
   "buttons": {
     "add": "Добавить видео",
@@ -69,6 +70,7 @@
     "loading": "Загрузка...",
     "error": "Ошибка",
     "success": "Успешно",
-    "notFound": "Не найдено"
+    "notFound": "Не найдено",
+    "or": "или"
   }
 }
