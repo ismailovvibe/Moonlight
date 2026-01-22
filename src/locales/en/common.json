@@ -1,0 +1,74 @@
+{
+  "nav": {
+    "home": "Home",
+    "kino": "Movies",
+    "anime": "Anime",
+    "dorama": "Dramas",
+    "multfilm": "Cartoons",
+    "profile": "Profile",
+    "dashboard": "Dashboard",
+    "logout": "Logout",
+    "language": "Language"
+  },
+  "hero": {
+    "title": "Welcome to Moonlight",
+    "subtitle": "Discover amazing movies, anime, dramas, and cartoons",
+    "search": "Search..."
+  },
+  "sections": {
+    "trending": "Trending",
+    "new": "New Releases",
+    "recommended": "Recommended For You"
+  },
+  "auth": {
+    "login": "Login",
+    "signup": "Sign Up",
+    "email": "Email",
+    "password": "Password",
+    "username": "Username",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "confirmPassword": "Confirm Password",
+    "loginTitle": "Login to Your Account",
+    "signupTitle": "Create New Account",
+    "alreadyHaveAccount": "Already have an account?",
+    "dontHaveAccount": "Don't have an account?",
+    "forgotPassword": "Forgot Password?"
+  },
+  "buttons": {
+    "add": "Add Video",
+    "edit": "Edit",
+    "delete": "Delete",
+    "save": "Save",
+    "cancel": "Cancel",
+    "play": "Play",
+    "addFavorite": "Add to Favorites",
+    "removeFavorite": "Remove from Favorites",
+    "submit": "Submit"
+  },
+  "profile": {
+    "myFavorites": "My Favorites",
+    "settings": "Settings",
+    "language": "Language Preference",
+    "logout": "Logout"
+  },
+  "admin": {
+    "addVideo": "Add New Video",
+    "editVideo": "Edit Video",
+    "deleteVideo": "Delete Video",
+    "manageCategories": "Manage Categories",
+    "manageUsers": "Manage Users",
+    "title": "Title",
+    "description": "Description",
+    "category": "Category",
+    "videoUrl": "Video URL",
+    "posterUrl": "Poster Image",
+    "language": "Language"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "notFound": "Not Found"
+  }
+}

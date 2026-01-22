@@ -1,0 +1,74 @@
+{
+  "nav": {
+    "home": "Главная",
+    "kino": "Фильмы",
+    "anime": "Аниме",
+    "dorama": "Дорамы",
+    "multfilm": "Мультфильмы",
+    "profile": "Профиль",
+    "dashboard": "Панель управления",
+    "logout": "Выход",
+    "language": "Язык"
+  },
+  "hero": {
+    "title": "Добро пожаловать в Moonlight",
+    "subtitle": "Откройте для себя удивительные фильмы, аниме, дорамы и мультфильмы",
+    "search": "Поиск..."
+  },
+  "sections": {
+    "trending": "В тренде",
+    "new": "Новые релизы",
+    "recommended": "Рекомендуемое для вас"
+  },
+  "auth": {
+    "login": "Вход",
+    "signup": "Регистрация",
+    "email": "Email",
+    "password": "Пароль",
+    "username": "Имя пользователя",
+    "firstName": "Имя",
+    "lastName": "Фамилия",
+    "confirmPassword": "Подтвердить пароль",
+    "loginTitle": "Войдите в свою учетную запись",
+    "signupTitle": "Создать новый аккаунт",
+    "alreadyHaveAccount": "Уже есть аккаунт?",
+    "dontHaveAccount": "Нет аккаунта?",
+    "forgotPassword": "Забыли пароль?"
+  },
+  "buttons": {
+    "add": "Добавить видео",
+    "edit": "Редактировать",
+    "delete": "Удалить",
+    "save": "Сохранить",
+    "cancel": "Отмена",
+    "play": "Воспроизвести",
+    "addFavorite": "Добавить в избранное",
+    "removeFavorite": "Удалить из избранного",
+    "submit": "Отправить"
+  },
+  "profile": {
+    "myFavorites": "Мои избранные",
+    "settings": "Параметры",
+    "language": "Выбор языка",
+    "logout": "Выход"
+  },
+  "admin": {
+    "addVideo": "Добавить новое видео",
+    "editVideo": "Редактировать видео",
+    "deleteVideo": "Удалить видео",
+    "manageCategories": "Управление категориями",
+    "manageUsers": "Управление пользователями",
+    "title": "Название",
+    "description": "Описание",
+    "category": "Категория",
+    "videoUrl": "URL видео",
+    "posterUrl": "Изображение постера",
+    "language": "Язык"
+  },
+  "common": {
+    "loading": "Загрузка...",
+    "error": "Ошибка",
+    "success": "Успешно",
+    "notFound": "Не найдено"
+  }
+}

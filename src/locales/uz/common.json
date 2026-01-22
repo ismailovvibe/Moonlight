@@ -1,0 +1,74 @@
+{
+  "nav": {
+    "home": "Asosiy",
+    "kino": "Kinolar",
+    "anime": "Anime",
+    "dorama": "Dramalar",
+    "multfilm": "Multfilimlar",
+    "profile": "Profil",
+    "dashboard": "Boshqaruv",
+    "logout": "Chiqish",
+    "language": "Til"
+  },
+  "hero": {
+    "title": "Moonlight-ga xush kelibsiz",
+    "subtitle": "Ajoyib kinolar, anime, dramalar va multfilimlarni kashf eting",
+    "search": "Qidirish..."
+  },
+  "sections": {
+    "trending": "Mashxur",
+    "new": "Yangi Chiqmalar",
+    "recommended": "Sizga tavsiya qilingan"
+  },
+  "auth": {
+    "login": "Kirish",
+    "signup": "Ro'yxatdan o'tish",
+    "email": "Email",
+    "password": "Parol",
+    "username": "Foydalanuvchi nomi",
+    "firstName": "Ism",
+    "lastName": "Familya",
+    "confirmPassword": "Parolni tasdiqlang",
+    "loginTitle": "Hisobingizga kiring",
+    "signupTitle": "Yangi akkaunt yaratish",
+    "alreadyHaveAccount": "Allaqachon akkaunt bor?",
+    "dontHaveAccount": "Akkaunt yo'qmi?",
+    "forgotPassword": "Parolni unutdingizmi?"
+  },
+  "buttons": {
+    "add": "Video Qo'shish",
+    "edit": "Tahrirlash",
+    "delete": "O'chirish",
+    "save": "Saqlash",
+    "cancel": "Bekor qilish",
+    "play": "Ijro etish",
+    "addFavorite": "Sevimlilar qo'shish",
+    "removeFavorite": "Sevimlilardan o'chirish",
+    "submit": "Yuborish"
+  },
+  "profile": {
+    "myFavorites": "Mening Sevimlilarim",
+    "settings": "Sozlamalar",
+    "language": "Til Tanlovi",
+    "logout": "Chiqish"
+  },
+  "admin": {
+    "addVideo": "Yangi Video Qo'shish",
+    "editVideo": "Videoni Tahrirlash",
+    "deleteVideo": "Videoni O'chirish",
+    "manageCategories": "Kategoriyalarni Boshqarish",
+    "manageUsers": "Foydalanuvchilarni Boshqarish",
+    "title": "Sarlavha",
+    "description": "Tavsifi",
+    "category": "Kategoriya",
+    "videoUrl": "Video URL",
+    "posterUrl": "Plakat Rasmi",
+    "language": "Til"
+  },
+  "common": {
+    "loading": "Yuklanmoqda...",
+    "error": "Xato",
+    "success": "Muvaffaqiyatli",
+    "notFound": "Topilmadi"
+  }
+}

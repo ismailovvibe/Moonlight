@@ -1,0 +1,31 @@
+{
+  "buildCommand": "npm run build",
+  "devCommand": "npm run dev",
+  "installCommand": "npm install",
+  "framework": "nextjs",
+  "env": {
+    "MONGODB_URI": {
+      "description": "MongoDB connection string",
+      "required": true
+    },
+    "JWT_SECRET": {
+      "description": "JWT secret for authentication",
+      "required": true
+    },
+    "NEXT_PUBLIC_API_URL": {
+      "description": "API URL for client-side requests",
+      "required": true
+    }
+  },
+  "git": {
+    "deploymentEnabled": {
+      "main": true
+    }
+  },
+  "functions": {
+    "src/pages/api/**/*.ts": {
+      "memory": 1024,
+      "maxDuration": 30
+    }
+  }
+}
